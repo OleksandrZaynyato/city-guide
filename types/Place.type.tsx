@@ -5,5 +5,5 @@ export interface Place {
     longDescription: string;
     image: string;
     timeFromCenter: string;
-    mapUrl?: string;
+    mapUrl: string;
 }

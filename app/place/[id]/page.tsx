@@ -1,23 +1,16 @@
-import { notFound } from "next/navigation";
+import { notFound } from 'next/navigation';
+import { Place } from '@/types/Place.type';
+import { PlaceMap } from '@/components/PlaceMap';
 
-interface Place {
-    id: number;
-    name: string;
-    shortDescription: string;
-    longDescription: string;
-    image: string;
-    timeFromCenter: string;
-    mapUrl: string;
+interface PageProps {
+    params: Promise<{ id: string }>;
 }
 
-export default async function PlacePage({
-                                            params,
-                                        }: {
-    params: Promise<{ id: string }>;
-}) {
+export default async function PlacePage({ params }: PageProps) {
     const { id } = await params;
+
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/places/${id}`, {
-        cache: "no-store",
+        cache: 'no-store',
     });
 
     if (!res.ok) return notFound();
@@ -26,7 +19,6 @@ export default async function PlacePage({
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-10 min-h-screen">
-
             <h1 className="text-4xl font-bold text-center mb-6">{place.name}</h1>
 
             <img
@@ -43,19 +35,8 @@ export default async function PlacePage({
                 </p>
             </div>
 
-            <div className="mt-10">
-                <h2 className="text-2xl font-semibold mb-3">📍 Розташування</h2>
-                <iframe
-                    src={place.mapUrl}
-                    width="100%"
-                    height="400"
-                    style={{ border: 0 }}
-                    allowFullScreen={true}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-xl shadow-md"
-                ></iframe>
-            </div>
+            {/* Client-side карта */}
+            <PlaceMap mapUrl={place.mapUrl} />
         </div>
     );
 }
