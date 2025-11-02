@@ -1,21 +1,24 @@
-import { notFound } from 'next/navigation';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import { Place } from '@/types/Place.type';
 import { PlaceMap } from '@/components/PlaceMap';
+import { useParams } from 'next/navigation';
 
-interface PageProps {
-    params: Promise<{ id: string }>;
-}
+export default function PlacePage() {
+    const params = useParams(); // отримує { id: string }
+    const [place, setPlace] = useState<Place | null>(null);
 
-export default async function PlacePage({ params }: PageProps) {
-    const { id } = await params;
+    useEffect(() => {
+        if (!params?.id) return;
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/places/${id}`, {
-        cache: 'no-store',
-    });
+        fetch(`/api/places/${params.id}`)
+            .then((res) => res.json())
+            .then(setPlace)
+            .catch(console.error);
+    }, [params?.id]);
 
-    if (!res.ok) return notFound();
-
-    const place: Place = await res.json();
+    if (!place) return <p>Завантаження...</p>;
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-10 min-h-screen">
@@ -35,7 +38,6 @@ export default async function PlacePage({ params }: PageProps) {
                 </p>
             </div>
 
-            {/* Client-side карта */}
             <PlaceMap mapUrl={place.mapUrl} />
         </div>
     );
