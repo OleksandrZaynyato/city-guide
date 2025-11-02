@@ -6,7 +6,7 @@ const Header:React.FC = () => {
     return (
         <header className="bg-white shadow-md py-4">
             <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-                <h1 className="text-2xl font-bold text-shadow-gray-900">City Guide Львова 🏙️</h1>
+                <h1 className="text-2xl font-bold text-zinc-800">City Guide Львова 🏙️</h1>
                 <nav>
                     <ul className="flex space-x-6">
                         <li>
