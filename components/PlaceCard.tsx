@@ -22,14 +22,16 @@ export const PlaceCard: React.FC<Place> = ({id, name, shortDescription, longDesc
                 </div>
                 <div className="mt-auto">
                     <p className="text-gray-600 text-sm mb-3">⏱ {timeFromCenter}</p>
-                    <Link
-                        href={`/places/${id}`}
-                        className="inline-block bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition-colors"
-                    >
-                        Детальніше
+                    <Link href={`/place/${id}`}>
+                        <div className=" bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline w-fit">
+                            Детальніше
+                        </div>
                     </Link>
+
+
                 </div>
             </div>
+
         </div>
     )
 }

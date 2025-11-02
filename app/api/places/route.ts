@@ -9,9 +9,10 @@ export const places: Place[] = [
             "Найвища точка Львова з панорамою на все місто — місце, куди хочеться повертатись.",
         longDescription:
             "Високий Замок — це пагорб, на якому колись стояла старовинна фортеця. Сьогодні це улюблене місце львів’ян та туристів для прогулянок і фото. Підйом трохи крутий, але нагорі — оглядовий майданчик, звідки відкривається неймовірна панорама Львова. Найкраще приходити на світанку або перед заходом сонця — атмосфера просто магічна.",
-        image:
-            "https://pro.lviv.ua/wp-content/uploads/zamkova-hora-lviv.jpeg",
+        image: "https://pro.lviv.ua/wp-content/uploads/zamkova-hora-lviv.jpeg",
         timeFromCenter: "15 хв пішки від Площі Ринок",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.0519305730794!2d24.046880276789914!3d49.84137817148198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6e8a1c6b67%3A0xa94156d3b4ea21d!2z0J7QntCeINCS0JvQmCDQlNCS0KXQmA!5e0!3m2!1suk!2sua!4v1695908379302!5m2!1suk!2sua",
     },
     {
         id: 2,
@@ -23,6 +24,8 @@ export const places: Place[] = [
         image:
             "https://th.bing.com/th/id/OIP.5UnsdKw9AstOkXR-eqcbKwHaE8?w=292&h=195&c=7&r=0&o=7&pid=1.7&rm=3",
         timeFromCenter: "0 хв — це сам центр",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.931915197053!2d24.029716876790004!3d49.84295717148177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add695e4b00a9%3A0xa26ccbbf672ea1b!2z0J_RgNC-0YHQv9C10LrQsCDQv9C-0YAu!5e0!3m2!1suk!2sua!4v1730569300785!5m2!1suk!2sua",
     },
     {
         id: 3,
@@ -34,6 +37,8 @@ export const places: Place[] = [
         image:
             "https://th.bing.com/th/id/OIP.3DWExdk9NDlmAOFw6mgIagHaE1?w=280&h=183&c=7&r=0&o=7&pid=1.7&rm=3",
         timeFromCenter: "25 хв пішки або 10 хв на трамваї",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.5562258033834!2d24.053839176789485!3d49.8330582714821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6b4a3f0d9b%3A0x76b15fbcf184e882!2z0JvQtdC00LXQvCDQv9C-0YAu!5e0!3m2!1suk!2sua!4v1730569407264!5m2!1suk!2sua",
     },
     {
         id: 4,
@@ -45,6 +50,8 @@ export const places: Place[] = [
         image:
             "https://th.bing.com/th/id/OIP.FINLUqtO7TArr9Dywbf7NAHaE7?w=292&h=193&c=7&r=0&o=7&pid=1.7&rm=3",
         timeFromCenter: "5 хв пішки від Площі Ринок",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.7716013267917!2d24.021578376790034!3d49.84571487148186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6c7a8e6a93%3A0xf22dbb8d77a53e4b!2z0J7Qv9C10LrRltGA0LDQv9CwINCc0L7RgdGM0LrQvtCy0LjRjyDQlNCa0JHRltCy0LAg0IbRg9GA0LzQsNC90LA!5e0!3m2!1suk!2sua!4v1730569484341!5m2!1suk!2sua",
     },
     {
         id: 5,
@@ -56,6 +63,8 @@ export const places: Place[] = [
         image:
             "https://svitkavy.com/media/filer_public_thumbnails/filer_public/42/45/4245c73f-a482-49d8-aa53-940381488b7d/katedralna.jpg__800x0_q85_subsampling-2.jpg",
         timeFromCenter: "10 хв пішки від центру",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.9150522459695!2d24.029701476790025!3d49.84322897148175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6e7b0e67a9%3A0x789f8c74a0b4da54!2z0KHQv9C40YbQsCDQnNC-0YHRjNC60L7QuSDQlNC-0YbQtdC90Yw!5e0!3m2!1suk!2sua!4v1730569573908!5m2!1suk!2sua",
     },
     {
         id: 6,
@@ -67,6 +76,8 @@ export const places: Place[] = [
         image:
             "https://tse3.mm.bing.net/th/id/OIP._5TGJccvDfRZqxqbZbprJAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
         timeFromCenter: "20 хв пішки або 8 хв на трамваї",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.483994361157!2d24.01992877678959!3d49.834225171482074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add9efac0b403%3A0xd2a49a7a5b5d1e5e!2z0KHRgtC10LvRjNC90LjQvSDQodC10YDRhNC-0L3QsNC70YzQvdCw!5e0!3m2!1suk!2sua!4v1730569629372!5m2!1suk!2sua",
     },
     {
         id: 7,
@@ -78,6 +89,8 @@ export const places: Place[] = [
         image:
             "https://th.bing.com/th/id/OIP.87JBBiJ6YpgsF1JMisaZ5gHaE7?w=296&h=197&c=7&r=0&o=7&pid=1.7&rm=3",
         timeFromCenter: "5 хв пішки від Площі Ринок",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.928556947033!2d24.035176676790013!3d49.84301297148174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6e91a6c0a9%3A0x85e13e6c23b5e5a3!2z0JTQvtC60LjQv9Cw0YDQvdCw0Y8g0KHQtdGA0YjQvtC90YI!5e0!3m2!1suk!2sua!4v1730569690619!5m2!1suk!2sua",
     },
     {
         id: 8,
@@ -89,6 +102,8 @@ export const places: Place[] = [
         image:
             "https://th.bing.com/th/id/OIP.0vfCmvKqNiOUED2OZfuMVQHaE7?w=263&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
         timeFromCenter: "2 хв пішки від Площі Ринок",
+        mapUrl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.9244035295044!2d24.031602476790017!3d49.843079471481734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6e92e8ab1f%3A0x4fef9b3d139d7933!2z0JrRg9C_0L7RgNC90Y8!5e0!3m2!1suk!2sua!4v1730569744021!5m2!1suk!2sua",
     },
 ];
 
