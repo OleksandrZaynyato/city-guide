@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Place } from '@/types/Place.type';
 import { PlaceMap } from '@/components/PlaceMap';
 import { useParams } from 'next/navigation';
+import Image from "next/image";
 
 export default function PlacePage() {
     const params = useParams(); // отримує { id: string }
@@ -24,10 +25,12 @@ export default function PlacePage() {
         <div className="max-w-4xl mx-auto px-4 py-10 min-h-screen">
             <h1 className="text-4xl font-bold text-center mb-6">{place.name}</h1>
 
-            <img
+            <Image
                 src={place.image}
                 alt={place.name}
                 className="w-full h-80 object-cover rounded-2xl shadow-md mb-6"
+                width={864}
+                height={362}
             />
 
             <div className="space-y-4 text-gray-700">

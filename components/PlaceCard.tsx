@@ -3,6 +3,7 @@
 import Link from "next/link";
 import {Place} from "@/types/Place.type";
 import React from "react";
+import Image from "next/image";
 
 export const PlaceCard: React.FC<Place> = ({id, name, shortDescription, longDescription, image, timeFromCenter}) => {
     return (
@@ -10,10 +11,12 @@ export const PlaceCard: React.FC<Place> = ({id, name, shortDescription, longDesc
             key={id}
             className="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
         >
-            <img
+            <Image
                 src={image}
                 alt={name}
                 className="w-full h-48 object-cover"
+                width={362}
+                height={192}
             />
             <div className="p-5 flex flex-col flex-1 justify-between">
                 <div>
