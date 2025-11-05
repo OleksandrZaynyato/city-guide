@@ -21,7 +21,7 @@ export const metadata = {
         siteName: "Мій сайт",
         images: [
             {
-                url: "https://www.davlermedia.com/wp-content/uploads/city-guide-square.png",
+                url: "https://www.mindinventory.com/blog/wp-content/uploads/2022/10/City-Guide-App-for-Travelers1200.png",
                 width: 800,
                 height: 600,
                 alt: "Next.js SEO Preview",

@@ -6,6 +6,8 @@ import React from "react";
 import Image from "next/image";
 
 export const PlaceCard: React.FC<Place> = ({id, name, shortDescription, longDescription, image, timeFromCenter}) => {
+    console.log("IMAGE:", image);
+
     return (
         <div
             key={id}
