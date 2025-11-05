@@ -13,10 +13,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "City guide Львова",
-  description: "City guide Львова",
+export const metadata = {
+    openGraph: {
+        title: "City guide Львова",
+        description: "City guide Львова",
+        url: "https://city-guide-psi.vercel.app/",
+        siteName: "Мій сайт",
+        images: [
+            {
+                url: "https://www.davlermedia.com/wp-content/uploads/city-guide-square.png",
+                width: 800,
+                height: 600,
+                alt: "Next.js SEO Preview",
+            },
+        ],
+        locale: "uk_UA",
+        type: "website",
+    },
 };
+
 
 export default function RootLayout({
   children,
