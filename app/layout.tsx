@@ -23,7 +23,7 @@ export const metadata = {
         siteName: "City guide Львова",
         images: [
             {
-                url: "https://www.mindinventory.com/blog/wp-content/uploads/2022/10/City-Guide-App-for-Travelers1200.png",
+                url: "https://city-guide-psi.vercel.app/preview.png",
                 width: 1200,
                 height: 630,
                 alt: "City guide preview",
