@@ -14,23 +14,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+    title: "City guide Львова",
+    description: "City guide Львова",
     openGraph: {
         title: "City guide Львова",
         description: "City guide Львова",
         url: "https://city-guide-psi.vercel.app/",
-        siteName: "Мій сайт",
+        siteName: "City guide Львова",
         images: [
             {
                 url: "https://www.mindinventory.com/blog/wp-content/uploads/2022/10/City-Guide-App-for-Travelers1200.png",
-                width: 800,
-                height: 600,
-                alt: "Next.js SEO Preview",
+                width: 1200,
+                height: 630,
+                alt: "City guide preview",
             },
         ],
         locale: "uk_UA",
         type: "website",
     },
+    twitter: {
+        card: "summary_large_image",
+        title: "City guide Львова",
+        description: "City guide Львова",
+        images: ["https://www.mindinventory.com/blog/wp-content/uploads/2022/10/City-Guide-App-for-Travelers1200.png"],
+    },
 };
+
+
 
 
 export default function RootLayout({
