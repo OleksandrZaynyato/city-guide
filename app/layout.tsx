@@ -36,7 +36,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "City guide Львова",
         description: "City guide Львова",
-        images: ["https://www.mindinventory.com/blog/wp-content/uploads/2022/10/City-Guide-App-for-Travelers1200.png"],
+        images: ["https://city-guide-psi.vercel.app/preview.png"],
     },
 };
 
